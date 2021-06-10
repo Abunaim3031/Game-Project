@@ -2,6 +2,7 @@ let correct_ans = getRandomIntInclusive(1, 10);
 
 let Result;
 
+
 //define function
 
 function getRandomIntInclusive(min, max) {
@@ -13,6 +14,7 @@ function getRandomIntInclusive(min, max) {
 
 
 for (var j = 1; j <= 3; j++) {
+
   let input1 = prompt("Guess your Correct Number(1-10)");
 
   input1 = parseInt(input1);
@@ -40,8 +42,25 @@ for (var j = 1; j <= 3; j++) {
     break;
   }
 
+  
+
+  if( j == 1 ){
+    alert("2 Chance Left");
+   
+  }
+
+  else if( j == 2) {
+   alert("Last Chance");
+  }
+
+  else{
+    
+    break;
+  }
+
 }
 
+// Outside The loop
 
 
 if (Result != "You Win!") {
